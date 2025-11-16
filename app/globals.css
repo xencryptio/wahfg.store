@@ -1,0 +1,155 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --card: #f8f8f8;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #1a1a1a;
+  --primary-foreground: #ffffff;
+  --secondary: #4a4a4a;
+  --secondary-foreground: #ffffff;
+  --accent: #2d5016;
+  --accent-foreground: #ffffff;
+  --muted: #e0e0e0;
+  --muted-foreground: #707070;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e5e5e5;
+  --input: #f5f5f5;
+  --ring: #888888;
+  --chart-1: #1a1a1a;
+  --chart-2: #4a4a4a;
+  --chart-3: #707070;
+  --chart-4: #999999;
+  --chart-5: #cccccc;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #f5f5f5;
+  --card: #151515;
+  --card-foreground: #f5f5f5;
+  --popover: #1a1a1a;
+  --popover-foreground: #f5f5f5;
+  --primary: #f5f5f5;
+  --primary-foreground: #0a0a0a;
+  --secondary: #b3b3b3;
+  --secondary-foreground: #0a0a0a;
+  --accent: #4ade80;
+  --accent-foreground: #0a0a0a;
+  --muted: #333333;
+  --muted-foreground: #999999;
+  --destructive: #ef4444;
+  --destructive-foreground: #0a0a0a;
+  --border: #262626;
+  --input: #1a1a1a;
+  --ring: #666666;
+  --chart-1: #f5f5f5;
+  --chart-2: #b3b3b3;
+  --chart-3: #808080;
+  --chart-4: #666666;
+  --chart-5: #4a4a4a;
+}
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+/* Add custom JotForm styling to match website aesthetic */
+@layer components {
+  #jotform-container {
+    @apply w-full;
+  }
+
+  #jotform-container form {
+    @apply bg-transparent;
+  }
+
+  #jotform-container input[type="text"],
+  #jotform-container input[type="email"],
+  #jotform-container input[type="tel"],
+  #jotform-container textarea,
+  #jotform-container select {
+    @apply bg-input border-border text-foreground placeholder-foreground/40 rounded-md border transition-colors focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+
+  #jotform-container input::placeholder,
+  #jotform-container textarea::placeholder {
+    @apply text-foreground/40;
+  }
+
+  #jotform-container button {
+    @apply bg-primary text-primary-foreground font-semibold py-3 px-6 rounded-md transition-all hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+  }
+
+  #jotform-container .form-label {
+    @apply text-foreground font-semibold mb-2 block;
+  }
+
+  #jotform-container .form-required {
+    @apply text-destructive;
+  }
+
+  #jotform-container .jotform-required-info {
+    @apply text-foreground/60 text-sm;
+  }
+}
