@@ -19,12 +19,12 @@ export function FeedbackForm() {
       id="feedback-form-section"
       className="pt-4 pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-50 to-gray-100 relative overflow-hidden"
     >
-
       <div className="absolute -top-24 right-10 w-64 h-64 bg-gray-300/30 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-gray-400/20 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto relative z-10">
 
+        {/* HEADER */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-200/50 border border-gray-300/50 rounded-full px-4 py-2 mb-6 shadow-sm">
             <div className="w-2 h-2 bg-gray-700 rounded-full animate-pulse"></div>
@@ -32,26 +32,27 @@ export function FeedbackForm() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-gray-900">
-            Reserve Your Copy, It's Free!
+            Reserve for Free. Pay ₹450 Only at Launch.
           </h2>
 
           <div className="text-lg text-gray-700 max-w-4xl mx-auto text-center leading-relaxed space-y-3">
             <p className="leading-relaxed whitespace-nowrap">
-              Reserve your copy for free by{' '}
+              Reserve your spot for free before{' '}
               <span className="font-bold text-gray-900 bg-gray-200 px-3 py-1 rounded-lg mx-1">
                 November 30, 2025
               </span>
-              to lock in the launch price of{' '}
+              and lock in the guaranteed launch price of{' '}
               <span className="font-bold text-gray-900 text-2xl mx-1">₹450</span>.
             </p>
 
             <p className="leading-relaxed text-gray-600 whitespace-nowrap">
-              Your order will be among the first dispatched once shipping opens{' '}
+              Your copy will be among the first dispatched once shipping opens{' '}
               <span className="text-sm italic">(shipping charges apply)</span>.
             </p>
           </div>
         </div>
 
+        {/* FORM CARD */}
         <div className="grid grid-cols-1 gap-12 items-start mt-10">
           <div className="bg-white/95 border border-gray-200 rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] overflow-hidden relative max-w-4xl mx-auto w-full fade-in-up">
 
@@ -70,6 +71,7 @@ export function FeedbackForm() {
           </div>
         </div>
 
+        {/* BADGES */}
         <div className="mt-16 space-y-6">
           <div className="flex flex-wrap justify-center gap-6 items-center">
             <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200 shadow-sm">
@@ -88,6 +90,7 @@ export function FeedbackForm() {
             </div>
           </div>
 
+          {/* PRIVACY STATEMENT */}
           <div className="text-center bg-gray-100/60 backdrop-blur-sm rounded-lg p-4 border border-gray-200/50 shadow-inner">
             <p className="text-sm text-gray-600 leading-relaxed">
               <span className="font-semibold text-gray-800">🔒 Your Privacy Matters:</span>
@@ -97,7 +100,6 @@ export function FeedbackForm() {
         </div>
 
       </div>
-
     </section>
   )
 }
