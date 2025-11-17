@@ -1,3 +1,8 @@
+"use client";
+
+import { useEffect } from "react";
+import { Linkedin } from "lucide-react";
+
 export function Authors() {
   const authors = [
     {
@@ -77,20 +82,14 @@ export function Authors() {
                   <p className="text-gray-300 leading-relaxed mb-6">
                     {author.description}
                   </p>
+
                   <a
                     href={author.linkedin}
                     target="_blank"
                     className="inline-flex items-center gap-2 text-gray-300 font-semibold hover:text-white transition-colors group/link"
                   >
-                    LinkedIn Profile
-                    <svg
-                      className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    <Linkedin className="w-5 h-5 group-hover/link:text-blue-400 transition-colors" />
+                    <span>LinkedIn</span>
                   </a>
                 </div>
               </div>
@@ -119,20 +118,14 @@ export function Authors() {
                     {author.title}
                   </p>
                   <p className="text-gray-700 leading-relaxed mb-6 text-sm">{author.description}</p>
+
                   <a
                     href={author.linkedin}
                     target="_blank"
                     className="inline-flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-900 transition-colors group/link"
                   >
-                    LinkedIn Profile
-                    <svg
-                      className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    <Linkedin className="w-5 h-5 group-hover/link:text-blue-600 transition-colors" />
+                    <span>LinkedIn</span>
                   </a>
                 </div>
               </div>
@@ -161,20 +154,14 @@ export function Authors() {
                     {reviewer.title}
                   </p>
                   <p className="text-gray-700 leading-relaxed mb-6 text-sm">{reviewer.description}</p>
+
                   <a
                     href={reviewer.linkedin}
                     target="_blank"
                     className="inline-flex items-center gap-2 text-gray-700 font-semibold hover:text-gray-900 transition-colors group/link"
                   >
-                    LinkedIn Profile
-                    <svg
-                      className="w-4 h-4 group-hover/link:translate-x-1 transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
+                    <Linkedin className="w-5 h-5 group-hover/link:text-blue-600 transition-colors" />
+                    <span>LinkedIn</span>
                   </a>
                 </div>
               </div>

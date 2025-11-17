@@ -11,7 +11,7 @@ export function BookPreview() {
   }
 
   return (
-    <section className="pt-8 pb-12 md:pt-12 md:pb-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-100 via-gray-50 to-white">
+    <section className="pt-8 pb-8 md:pt-12 md:pb-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-100 via-gray-50 to-white">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}
@@ -24,7 +24,7 @@ export function BookPreview() {
             Take a Look Inside
           </h2>
           <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
-            Explore the back cover and read a sample chapter to see what awaits you
+            Preview the table of contents and explore what's covered in the book
           </p>
         </div>
 
@@ -43,13 +43,15 @@ export function BookPreview() {
 
               <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg border border-gray-600/50 mb-6">
                 <img
-                  src="/images/sample.jpg"
+                  src="/images/backcover.jpg"
                   alt="Web Application Hacker's Field Guide - Back Cover"
                   className="w-full h-auto rounded-lg shadow-xl hover:scale-[1.02] transition-transform duration-300"
                 />
               </div>
 
-        
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Discover what industry experts and reviewers are saying about this comprehensive guide to web application security.
+              </p>
             </div>
           </div>
 
@@ -60,7 +62,7 @@ export function BookPreview() {
             <div className="relative z-10">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-full"></div>
-                <h3 className="text-2xl font-bold text-gray-900">Sample Chapter</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Table of Contents</h3>
               </div>
 
               <div className="space-y-4">
@@ -90,20 +92,20 @@ export function BookPreview() {
                     <svg className="w-5 h-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    What's Inside
+                    Preview Includes
                   </h4>
                   <ul className="text-sm text-gray-700 space-y-2">
                     <li className="flex items-start gap-2">
                       <span className="text-gray-400 mt-1">•</span>
-                      <span>Detailed methodology and approach</span>
+                      <span>Complete table of contents</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-gray-400 mt-1">•</span>
-                      <span>Practical code examples and demonstrations</span>
+                      <span>Chapter organization and topics</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-gray-400 mt-1">•</span>
-                      <span>Real-world vulnerability scenarios</span>
+                      <span>Overview of book structure</span>
                     </li>
                   </ul>
                 </div>
@@ -114,7 +116,7 @@ export function BookPreview() {
         </div>
 
         {/* Call to Action Banner */}
-        <div className="mt-12 bg-gradient-to-r from-gray-700 to-gray-800 text-white p-8 rounded-xl shadow-2xl relative overflow-hidden">
+        <div className="mt-8 bg-gradient-to-r from-gray-700 to-gray-800 text-white p-8 rounded-xl shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-gray-500/20 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-gray-600/20 rounded-full blur-3xl"></div>
           
