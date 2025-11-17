@@ -1,6 +1,8 @@
+
 import { Hero } from '@/components/hero'
 import { BookDetails } from '@/components/book-details'
 import { Authors } from '@/components/authors'
+import { BookPreview } from '@/components/book-preview'
 import { FeedbackForm } from '@/components/feedback-form'
 import { Footer } from '@/components/footer'
 
@@ -18,6 +20,11 @@ export default function Home() {
       {/* Normal spacing between sections */}
       <div className="mt-20 px-4">
         <Authors />
+      </div>
+
+      {/* Book Preview Section */}
+      <div className="mt-20 px-4">
+        <BookPreview />
       </div>
 
       <div className="mt-20 px-4">
