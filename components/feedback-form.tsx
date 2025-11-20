@@ -28,26 +28,30 @@ export function FeedbackForm() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-200/50 border border-gray-300/50 rounded-full px-4 py-2 mb-6 shadow-sm">
             <div className="w-2 h-2 bg-gray-700 rounded-full animate-pulse"></div>
-            <span className="text-gray-700 text-sm font-medium">Limited Offer</span>
+            <span className="text-gray-700 text-sm font-medium">Hard Copy Only</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-gray-900">
-            Reserve for Free. Pay ₹450 Only at Launch.
+            Reserve for Free. Pay ₹450 Only Upon Distribution.
           </h2>
 
           <div className="text-lg text-gray-700 max-w-4xl mx-auto text-center leading-relaxed space-y-3">
-            <p className="leading-relaxed whitespace-nowrap">
-              Reserve your spot for free before{' '}
+            <p className="leading-relaxed">
+              Reserve your hard copy for free before{' '}
               <span className="font-bold text-gray-900 bg-gray-200 px-3 py-1 rounded-lg mx-1">
                 November 30, 2025
               </span>
-              and lock in the guaranteed launch price of{' '}
+              and lock in the guaranteed price of{' '}
               <span className="font-bold text-gray-900 text-2xl mx-1">₹450</span>.
             </p>
 
-            <p className="leading-relaxed text-gray-600 whitespace-nowrap">
-              Your copy will be among the first dispatched once shipping opens{' '}
+            <p className="leading-relaxed text-gray-600">
+              Your copy will be among the first dispatched once distribution opens{' '}
               <span className="text-sm italic">(shipping charges apply)</span>.
+            </p>
+
+            <p className="text-sm text-gray-500 mt-2">
+              Published November 15, 2025 | Singapore
             </p>
           </div>
         </div>
@@ -87,6 +91,11 @@ export function FeedbackForm() {
             <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200 shadow-sm">
               <span className="w-3 h-3 bg-gray-700 rounded-full"></span>
               <span className="text-sm font-medium text-gray-700">Instant Confirmation</span>
+            </div>
+
+            <div className="flex items-center gap-2 bg-white/70 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-200 shadow-sm">
+              <span className="w-3 h-3 bg-gray-700 rounded-full"></span>
+              <span className="text-sm font-medium text-gray-700">Hard Copy Only</span>
             </div>
           </div>
 
