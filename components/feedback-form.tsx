@@ -6,7 +6,7 @@ export function FeedbackForm() {
   useEffect(() => {
     const script = document.createElement('script')
     script.type = 'text/javascript'
-    script.src = 'https://form.jotform.com/jsform/253193406492459'
+    script.src = 'https://form.jotform.com/jsform/253191156339459'
     script.async = true
     const container = document.getElementById('jotform-container')
     if (container) {
