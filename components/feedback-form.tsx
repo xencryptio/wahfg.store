@@ -32,7 +32,7 @@ export function FeedbackForm() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-gray-900">
-            Reserve for Free. Pay ₹450 Only Upon Distribution.
+            Reserve for Free. Pay ₹450 once distribution begins.
           </h2>
 
           <div className="text-lg text-gray-700 max-w-4xl mx-auto text-center leading-relaxed space-y-3">
