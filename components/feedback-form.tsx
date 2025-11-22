@@ -28,7 +28,7 @@ export function FeedbackForm() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gray-200/50 border border-gray-300/50 rounded-full px-4 py-2 mb-6 shadow-sm">
             <div className="w-2 h-2 bg-gray-700 rounded-full animate-pulse"></div>
-            <span className="text-gray-700 text-sm font-medium">Hard Copy Only</span>
+            <span className="text-gray-700 text-sm font-medium">Limited to orders within India</span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight text-gray-900">
